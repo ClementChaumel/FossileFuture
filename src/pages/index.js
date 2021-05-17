@@ -1,42 +1,61 @@
 import React from "react";
+import Mood from "../components/mood";
 
-import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 function IndexPage() {
   return (
-    <Layout>
+    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
-    </Layout>
+      <div className=" px-36 ">
+        <div className=" bg-yellow-900 p-20">
+          <p className="text-white text-5xl text-center">
+            C&apos;est le toit !
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-6 p-6 bg-gray-600 ">
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <Mood
+            title="horizontal"
+            type="horizontal"
+            src={["https://placekitten.com/3000/300"]}
+          />
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <Mood
+            title="Comme insta"
+            type="carousel"
+            src={[
+              "https://placekitten.com/1000/300",
+              "https://placekitten.com/1001/300",
+              "https://placekitten.com/1002/300",
+              "https://placekitten.com/1003/300",
+              "https://placekitten.com/1004/300",
+            ]}
+          />
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <Mood
+            title="vertical"
+            type="vertical"
+            src={["https://placekitten.com/1000/3000"]}
+          />
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+          <img src="https://placekitten.com/300/300"></img>
+        </div>
+      </div>
+      <div className="bg-green-500 p-20">
+        <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
+      </div>
+    </div>
   );
 }
 

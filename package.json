@@ -4,6 +4,7 @@
   "version": "5.0.0",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.3",
     "gatsby": "2.32.12",
     "gatsby-plugin-manifest": "2.12.1",
     "gatsby-plugin-offline": "3.10.2",
