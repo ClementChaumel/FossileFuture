@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import ReactCarousel from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel as ReactCarousel } from "react-responsive-carousel";
 
 const Mood = ({ title, type = "horizontal", src }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +60,7 @@ const Carousel = ({ isOpen, src }) => {
         duration-1000
         ease-in-out`}
     >
-      <ReactCarousel>
+      <ReactCarousel emulateTouch={true} showStatus={false}>
         {src.map((source) => {
           return <img src={source} key={source} />;
         })}
