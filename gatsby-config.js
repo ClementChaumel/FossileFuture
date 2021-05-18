@@ -5,8 +5,8 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Fossile future`,
-    description: `Fossile future`,
+    title: `Fossile futur`,
+    description: `Fossile futur`,
     author: `Léa + Clément`,
   },
   plugins: [

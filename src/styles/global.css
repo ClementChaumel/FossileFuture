@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .scroll-snap-none {
-    scroll-snap-type: none;
-  }
-  .scroll-snap-x {
-    scroll-snap-type: x;
-  }
-  .scroll-snap-y {
-    scroll-snap-type: y;
-  }
+.carousel.carousel-slider .control-arrow {
+  top: calc(50% - 1.5rem) !important;
+  background: black !important;
+  padding: 0 !important;
+  border-radius: 50%;
+  opacity: 0.4 !important;
+  height: 3rem;
+  width: 3rem;
+}
+.carousel.carousel-slider .control-arrow:hover {
+  opacity: 0.8 !important;
 }

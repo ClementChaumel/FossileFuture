@@ -38,14 +38,14 @@ export default Mood;
 const Horizontal = ({ isOpen, src }) => {
   return (
     <div
-      className={`${isOpen ? "h-32" : "h-0"} 
+      className={`${isOpen ? "h-96" : "h-0"} 
         overflow-y-hidden
         overflow-x-scroll
         transition-height
         duration-1000
         ease-in-out`}
     >
-      <img className="max-w-none h-32" src={src[0]} />
+      <img className="max-w-none h-96 pb-3.5" src={src[0]} />
     </div>
   );
 };
@@ -53,14 +53,19 @@ const Horizontal = ({ isOpen, src }) => {
 const Carousel = ({ isOpen, src }) => {
   return (
     <div
-      className={`${isOpen ? "h-32" : "h-0"} 
+      className={`${isOpen ? "max-h-96" : "max-h-0"} 
         overflow-y-hidden
         overflow-x-scroll
-        transition-height
+        transition-max-height
         duration-1000
         ease-in-out`}
     >
-      <ReactCarousel emulateTouch={true} showStatus={false}>
+      <ReactCarousel
+        emulateTouch={true}
+        showStatus={false}
+        showThumbs={false}
+        showIndicators={false}
+      >
         {src.map((source) => {
           return <img src={source} key={source} />;
         })}

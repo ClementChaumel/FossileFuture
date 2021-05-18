@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "description": "Site pour le collectif Fossile futur",
   "version": "5.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Clément et Léa",
   "dependencies": {
     "gatsby": "2.32.12",
     "gatsby-plugin-manifest": "2.12.1",
