@@ -3,8 +3,6 @@ import Mood from "../components/mood";
 
 import SEO from "../components/seo";
 
-import wallTexture from "../images/Textures/texturemaison.svg";
-
 import CR11 from "../images/CR1/cr1_1.jpg";
 import CR12 from "../images/CR1/cr1_2.jpg";
 import CR13 from "../images/CR1/cr1_3.jpg";
@@ -40,30 +38,26 @@ function IndexPage() {
             C&apos;est le toit !
           </p>
         </div>
-        <div
-          className="grid grid-cols-3 gap-6 p-6 bg-gray-600 "
-          style={{
-            backgroundImage: `url(${wallTexture})`,
-            backgroundSize: "160px",
-          }}
-        >
-          <img src={CR11}></img>
-          <img src={CR12}></img>
-          <img src={CR13}></img>
-
-          <img src={CR14}></img>
-          <img src={CR15}></img>
-          <img src={CR16}></img>
+        <div className="flex flex-col p-6 border-4 border-black border-t-0 striped">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
+            <img src={CR11}></img>
+            <img src={CR12}></img>
+            <img src={CR13}></img>
+            <img src={CR14}></img>
+            <img src={CR15}></img>
+            <img src={CR16}></img>
+          </div>
 
           <Mood
             type="horizontal"
             src={[tergiBleu]}
             title="Tergiversations de Bleu : Supprimer le groupe Facebook"
           />
-
-          <img src={CR17}></img>
-          <img src={CR18}></img>
-          <img src={CR19}></img>
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
+            <img src={CR17}></img>
+            <img src={CR18}></img>
+            <img src={CR19}></img>
+          </div>
 
           <Mood
             type="horizontal"
@@ -76,10 +70,11 @@ function IndexPage() {
             src={["https://placekitten.com/3000/1000"]}
             title="Fossile&Futur, qui a pensé à tout ça ?"
           />
-
-          <img src={CR110}></img>
-          <img src={CR111}></img>
-          <img src={CR112}></img>
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
+            <img src={CR110}></img>
+            <img src={CR111}></img>
+            <img src={CR112}></img>
+          </div>
 
           <Mood
             type="carousel"
