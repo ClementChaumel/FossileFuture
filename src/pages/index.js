@@ -3,6 +3,8 @@ import Mood from "../components/mood";
 
 import SEO from "../components/seo";
 
+import wallTexture from "../images/Textures/texturemaison.svg";
+
 import CR11 from "../images/CR1/cr1_1.jpg";
 import CR12 from "../images/CR1/cr1_2.jpg";
 import CR13 from "../images/CR1/cr1_3.jpg";
@@ -38,7 +40,13 @@ function IndexPage() {
             C&apos;est le toit !
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6 p-6 bg-gray-600 ">
+        <div
+          className="grid grid-cols-3 gap-6 p-6 bg-gray-600 "
+          style={{
+            backgroundImage: `url(${wallTexture})`,
+            backgroundSize: "160px",
+          }}
+        >
           <img src={CR11}></img>
           <img src={CR12}></img>
           <img src={CR13}></img>
