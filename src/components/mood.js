@@ -16,10 +16,10 @@ const Mood = ({ title, type = "horizontal", src }) => {
   const Wrapper = typeClassMap[type];
 
   return (
-    <div className="bg-pink-500 col-span-3">
+    <div className="bg-white border-4 border-black col-span-3 mb-6">
       <div className="flex items-center">
         <button
-          className="bg-pink-900 rounded p-4"
+          className="bg-white px-4"
           onClick={() => {
             setIsOpen(!isOpen);
           }}
