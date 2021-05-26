@@ -65,6 +65,7 @@ const Carousel = ({ isOpen, src }) => {
         showStatus={false}
         showThumbs={false}
         showIndicators={false}
+        autoPlay={false}
       >
         {src.map((source) => {
           return <img src={source} key={source} />;
