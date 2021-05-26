@@ -16,7 +16,7 @@ const Mood = ({ title, type = "horizontal", src }) => {
   const Wrapper = typeClassMap[type];
 
   return (
-    <div className="bg-white border-4 border-black col-span-3 mb-6">
+    <div className="bg-white border-4 border-black col-span-3">
       <div className="flex items-center">
         <button
           className="bg-white px-4"
@@ -83,7 +83,7 @@ const Verical = ({ isOpen, src }) => {
         transition-max-height
         ease-in`}
       style={{
-        maxHeight: isOpen ? "2000px" : "0px",
+        maxHeight: isOpen ? "9000px" : "0px",
         transitionDuration: "3000ms",
       }}
     >
