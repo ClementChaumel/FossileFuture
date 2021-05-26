@@ -38,53 +38,47 @@ function IndexPage() {
             C&apos;est le toit !
           </p>
         </div>
-        <div className="flex flex-col p-6 border-4 border-black border-t-0 striped">
+        <div className="flex flex-col p-6 border-4 border-black border-t-0 dotted">
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
             <img src={CR11}></img>
             <img src={CR12}></img>
             <img src={CR13}></img>
+            <Mood
+              type="horizontal"
+              src={[tergiBleu]}
+              title="Tergiversations de Bleu : Supprimer le groupe Facebook"
+            />
             <img src={CR14}></img>
             <img src={CR15}></img>
             <img src={CR16}></img>
-          </div>
 
-          <Mood
-            type="horizontal"
-            src={[tergiBleu]}
-            title="Tergiversations de Bleu : Supprimer le groupe Facebook"
-          />
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
             <img src={CR17}></img>
             <img src={CR18}></img>
             <img src={CR19}></img>
-          </div>
-
-          <Mood
-            type="horizontal"
-            src={[FossileEtFuturTravaillent]}
-            title="Fossile&Futur travaillent dur"
-          />
-
-          <Mood
-            type="horizontal"
-            src={["https://placekitten.com/3000/1000"]}
-            title="Fossile&Futur, qui a pensé à tout ça ?"
-          />
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-6">
+            <Mood
+              type="horizontal"
+              src={[FossileEtFuturTravaillent]}
+              title="Fossile&Futur travaillent dur"
+            />
+            <Mood
+              type="horizontal"
+              src={["https://placekitten.com/3000/1000"]}
+              title="Fossile&Futur, qui a pensé à tout ça ?"
+            />
             <img src={CR110}></img>
             <img src={CR111}></img>
             <img src={CR112}></img>
+            <Mood
+              type="carousel"
+              src={[narration11, narration12, narration13, narration14]}
+              title={
+                <>
+                  Futur<em>Futur</em> Et si l&apos;asso avait un autre nom
+                </>
+              }
+            />
           </div>
 
-          <Mood
-            type="carousel"
-            src={[narration11, narration12, narration13, narration14]}
-            title={
-              <>
-                Futur<em>Futur</em> Et si l&apos;asso avait un autre nom
-              </>
-            }
-          />
           {/* <Mood
             title="vertical"
             type="vertical"
