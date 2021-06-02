@@ -9,8 +9,9 @@ const Mood = ({ title, type = "horizontal", src }) => {
 
   const typeClassMap = {
     horizontal: Horizontal,
+    comic: Comic,
     carousel: Carousel,
-    vertical: Verical,
+    vertical: Vertical,
   };
 
   const Wrapper = typeClassMap[type];
@@ -50,6 +51,21 @@ const Horizontal = ({ isOpen, src }) => {
   );
 };
 
+const Comic = ({ isOpen, src }) => {
+  return (
+    <div
+      className={`${isOpen ? "h-96" : "h-0"} 
+        overflow-y-hidden
+        overflow-x-scroll
+        transition-height
+        duration-1000
+        ease-in-out`}
+    >
+      <img className="max-w-none h-96 pb-3.5" src={src[0]} />
+    </div>
+  );
+};
+
 const Carousel = ({ isOpen, src }) => {
   return (
     <div
@@ -75,16 +91,16 @@ const Carousel = ({ isOpen, src }) => {
   );
 };
 
-const Verical = ({ isOpen, src }) => {
+const Vertical = ({ isOpen, src }) => {
   return (
     <div
       className={`
-        overflow-y-hidden
+        overflow-y-scroll
         transition-max-height
         ease-in`}
       style={{
-        maxHeight: isOpen ? "9000px" : "0px",
-        transitionDuration: "3000ms",
+        maxHeight: isOpen ? "80vh" : "0px",
+        transitionDuration: "850ms",
       }}
     >
       <img src={src[0]} />
@@ -95,10 +111,14 @@ const Verical = ({ isOpen, src }) => {
 Mood.propTypes = {
   title: PropTypes.string.isRequired,
   src: PropTypes.array.isRequired,
-  type: PropTypes.oneOf(["horizontal", "carousel", "vertical"]),
+  type: PropTypes.oneOf(["horizontal", "comic", "carousel", "vertical"]),
   numberOfPanel: PropTypes.number,
 };
 Horizontal.propTypes = {
+  src: PropTypes.array.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+};
+Comic.propTypes = {
   src: PropTypes.array.isRequired,
   isOpen: PropTypes.bool.isRequired,
 };
@@ -106,7 +126,7 @@ Carousel.propTypes = {
   src: PropTypes.array.isRequired,
   isOpen: PropTypes.bool.isRequired,
 };
-Verical.propTypes = {
+Vertical.propTypes = {
   src: PropTypes.array.isRequired,
   isOpen: PropTypes.bool.isRequired,
 };
