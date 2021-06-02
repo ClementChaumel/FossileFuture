@@ -21,3 +21,40 @@
 .carousel.carousel-slider .control-arrow:hover {
   opacity: 0.8 !important;
 }
+
+.button {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0 1rem;
+  background-image: url("../images/Fenetres/bouton_fermé.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  background-image: url("../images/Fenetres/bouton_fermé_hover.png");
+}
+
+.button--open {
+  background-image: url("../images/Fenetres/bouton_ouvert.png");
+}
+
+.button--open:hover {
+  background-image: url("../images/Fenetres/bouton_ouvert_hover.png");
+}
+
+.fenetre {
+  color: white;
+  padding: 0.5rem 0;
+  background-size: 932px 45px;
+  background-position-x: -10px;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin-top: -4px;
+  width: calc(100% - 4px);
+  margin-left: 2px;
+}
