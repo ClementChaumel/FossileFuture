@@ -88,6 +88,31 @@ import beaucoupLa from "../images/CR4/Ça_Fait_beaucoup_la_non_Comic.jpg";
 import lesComissions from "../images/CR4/Didac_les_commissions_c_est_quoi_.jpg";
 import EmotionLaMaison from "../images/CR4/emotion___La_Maison_Trop_Petite_A_Gentioux.jpg";
 
+import CR51 from "../images/CR5/cr5_1.jpg";
+import CR52 from "../images/CR5/cr5_2.jpg";
+import CR53 from "../images/CR5/cr5_3.jpg";
+import CR54 from "../images/CR5/cr5_4.jpg";
+import CR55 from "../images/CR5/cr5_5.jpg";
+import CR56 from "../images/CR5/cr5_6.jpg";
+import CR57 from "../images/CR5/cr5_7.jpg";
+import CR58 from "../images/CR5/cr5_8.jpg";
+import CR59 from "../images/CR5/cr5_9.jpg";
+import CR510 from "../images/CR5/cr5_10.jpg";
+import CR511 from "../images/CR5/cr5_11.jpg";
+import CR512 from "../images/CR5/cr5_12.jpg";
+import CR513 from "../images/CR5/cr5_13.jpg";
+import CR514 from "../images/CR5/cr5_14.jpg";
+import CR515 from "../images/CR5/cr5_15.jpg";
+import CR516 from "../images/CR5/cr5_16.jpg";
+import CR517 from "../images/CR5/cr5_17.jpg";
+import CR518 from "../images/CR5/cr5_18.jpg";
+import CR519 from "../images/CR5/cr5_19.jpg";
+import CR520 from "../images/CR5/cr5_20.jpg";
+import CR521 from "../images/CR5/cr5_21.jpg";
+import CR522 from "../images/CR5/cr5_22.jpg";
+import CR523 from "../images/CR5/cr5_23.jpg";
+import CR524 from "../images/CR5/cr5_24.jpg";
+
 import CR61 from "../images/CR6/cr6_1.jpg";
 import CR62 from "../images/CR6/cr6_2.jpg";
 import CR63 from "../images/CR6/cr6_3.jpg";
@@ -108,6 +133,20 @@ import CR617 from "../images/CR6/cr6_17.jpg";
 import CR618 from "../images/CR6/cr6_18.jpg";
 import CR619 from "../images/CR6/cr6_19.jpg";
 import CR620 from "../images/CR6/cr6_20.jpg";
+
+import CR71 from "../images/CR7/cr7_1.jpg";
+import CR72 from "../images/CR7/cr7_2.jpg";
+import CR73 from "../images/CR7/cr7_3.jpg";
+import CR74 from "../images/CR7/cr7_4.jpg";
+import CR75 from "../images/CR7/cr7_5.jpg";
+import CR76 from "../images/CR7/cr7_6.jpg";
+import CR77 from "../images/CR7/cr7_7.jpg";
+import CR78 from "../images/CR7/cr7_8.jpg";
+import CR79 from "../images/CR7/cr7_9.jpg";
+import CR710 from "../images/CR7/cr7_10.jpg";
+import CR711 from "../images/CR7/cr7_11.jpg";
+import CR712 from "../images/CR7/cr7_12.jpg";
+import CR713 from "../images/CR7/cr7_13.jpg";
 
 import ancienLocataires from "../images/CR6/comic_Ancien_locataires.jpg";
 
@@ -143,12 +182,12 @@ function IndexPage() {
             <img src={CR18} />
             <img src={CR19} />
             <Mood
-              type="horizontal"
+              type="comic"
               src={[FossileEtFuturTravaillent]}
               title="Fossile&Futur travaillent dur"
             />
             <Mood
-              type="horizontal"
+              type="comic"
               src={["https://placekitten.com/3000/1000"]}
               title="Fossile&Futur, qui a pensé à tout ça ?"
             />
@@ -184,7 +223,7 @@ function IndexPage() {
             <img src={CR214} />
             <img src={CR215} />
             <Mood
-              type="horizontal"
+              type="comic"
               src={[chacunSonTruc]}
               title="Chacun.e son truc"
             />
@@ -205,7 +244,7 @@ function IndexPage() {
             <img src={CR31} />
             <img src={CR32} />
             <img src={CR33} />
-            <Mood type="horizontal" src={[caChipote]} title="Ça chipote" />
+            <Mood type="comic" src={[caChipote]} title="Ça chipote" />
             <img src={CR34} />
             <img src={CR35} />
             <img src={CR36} />
@@ -229,7 +268,7 @@ function IndexPage() {
             <img src={CR42} />
             <img src={CR43} />
             <Mood
-              type="horizontal"
+              type="comic"
               src={[beaucoupLa]}
               title="Ça fait beaucoup là, non ?"
             />
@@ -254,6 +293,34 @@ function IndexPage() {
             />
             <img src={CR413} />
             <img src={CR414} />
+          </div>
+
+          {/* CR5 */}
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+            <img src={CR51} />
+            <img src={CR52} />
+            <img src={CR53} />
+            <img src={CR54} />
+            <img src={CR55} />
+            <img src={CR56} />
+            <img src={CR57} />
+            <img src={CR58} />
+            <img src={CR59} />
+            <img src={CR510} />
+            <img src={CR511} />
+            <img src={CR512} />
+            <img src={CR513} />
+            <img src={CR514} />
+            <img src={CR515} />
+            <img src={CR516} />
+            <img src={CR517} />
+            <img src={CR518} />
+            <img src={CR519} />
+            <img src={CR520} />
+            <img src={CR521} />
+            <img src={CR522} />
+            <img src={CR523} />
+            <img src={CR524} />
           </div>
 
           {/* CR6 */}
@@ -283,6 +350,23 @@ function IndexPage() {
             <img src={CR618} />
             <img src={CR619} />
             <img src={CR620} />
+          </div>
+
+          {/* CR7 */}
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+            <img src={CR71} />
+            <img src={CR72} />
+            <img src={CR73} />
+            <img src={CR74} />
+            <img src={CR75} />
+            <img src={CR76} />
+            <img src={CR77} />
+            <img src={CR78} />
+            <img src={CR79} />
+            <img src={CR710} />
+            <img src={CR711} />
+            <img src={CR712} />
+            <img src={CR713} />
           </div>
         </div>
       </div>
