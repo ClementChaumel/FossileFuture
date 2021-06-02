@@ -3,26 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  .striped {
-    background-image: linear-gradient(
-      45deg,
-      #ffffff 42.31%,
-      #ababab 42.31%,
-      #ababab 50%,
-      #ffffff 50%,
-      #ffffff 92.31%,
-      #ababab 92.31%,
-      #ababab 100%
-    );
-    background-size: 13px 13px;
-  }
-
   .dotted {
-    background-color: #fff;
-    background-image: radial-gradient(circle, #ababab 5px, transparent 3px),
-      radial-gradient(circle, #ababab 5px, transparent 3px);
-    background-size: 33px 35px;
-    background-position: 0 0, 50px 50px;
+    background-image: url("../images/fond.png");
     background-attachment: fixed;
   }
 }
