@@ -54,14 +54,18 @@ const Horizontal = ({ isOpen, src }) => {
 const Comic = ({ isOpen, src }) => {
   return (
     <div
-      className={`${isOpen ? "h-96" : "h-0"} 
-        overflow-y-hidden
-        overflow-x-scroll
+      className={`
+        overflow-hidden
         transition-height
         duration-1000
         ease-in-out`}
+      style={{ height: isOpen ? "291px" : "0px" }}
     >
-      <img className="max-w-none h-96 pb-3.5" src={src[0]} />
+      <img
+        className="max-w-none pb-3.5"
+        src={src[0]}
+        style={{ height: "305px" }}
+      />
     </div>
   );
 };
