@@ -9,6 +9,15 @@
   }
 }
 
+@font-face {
+  font-family: "Redaction Regular";
+  src: url("../fonts/Redaction-Regular.woff2");
+}
+
+body {
+  font-family: "Redaction Regular";
+}
+
 .carousel.carousel-slider .control-arrow {
   top: calc(50% - 1.5rem) !important;
   background: black !important;
@@ -47,14 +56,16 @@
 
 .fenetre {
   color: white;
-  padding: 0.5rem 0;
-  background-size: 932px 45px;
+  padding: 1.5rem 0;
+  background-size: 932px 83px;
   background-position-x: -10px;
   cursor: pointer;
+  background-position-y: -5px;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
-  margin-top: -4px;
+  margin-top: -7px;
   width: calc(100% - 4px);
   margin-left: 2px;
 }
