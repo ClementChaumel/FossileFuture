@@ -37,5 +37,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          placeholder: `tracedSVG`,
+          backgroundColor: `transparent`,
+        },
+      },
+    },
+    `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
 };
