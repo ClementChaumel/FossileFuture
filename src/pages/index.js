@@ -173,6 +173,7 @@ function IndexPage() {
               type="horizontal"
               src={[tergiBleu]}
               title="Tergiversations de Bleu : Supprimer le groupe Facebook"
+              link="tergiversation"
             />
             <img src={CR14} />
             <img src={CR15} />
@@ -185,11 +186,13 @@ function IndexPage() {
               type="comic"
               src={[FossileEtFuturTravaillent]}
               title="Fossile&Futur travaillent dur"
+              link="fossileEtFutur"
             />
             <Mood
               type="comic"
               src={["https://placekitten.com/3000/1000"]}
               title="Fossile&Futur, qui a pensé à tout ça ?"
+              link="fossileEtFutur"
             />
             <img src={CR110} />
             <img src={CR111} />
@@ -202,6 +205,7 @@ function IndexPage() {
                   Futur<em>Futur</em> Et si l&apos;asso avait un autre nom
                 </>
               }
+              link="futurFutur"
             />
           </div>
 
@@ -226,6 +230,7 @@ function IndexPage() {
               type="comic"
               src={[chacunSonTruc]}
               title="Chacun.e son truc"
+              link="fossileEtFutur"
             />
             <img src={CR216} />
             <img src={CR217} />
@@ -236,6 +241,7 @@ function IndexPage() {
               type="horizontal"
               src={[emotionBiere]}
               title="Bière, quel plaisir"
+              link="tergiversation"
             />
           </div>
 
@@ -244,7 +250,12 @@ function IndexPage() {
             <img src={CR31} />
             <img src={CR32} />
             <img src={CR33} />
-            <Mood type="comic" src={[caChipote]} title="Ça chipote" />
+            <Mood
+              type="comic"
+              src={[caChipote]}
+              title="Ça chipote"
+              link="fossileEtFutur"
+            />
             <img src={CR34} />
             <img src={CR35} />
             <img src={CR36} />
@@ -271,6 +282,7 @@ function IndexPage() {
               type="comic"
               src={[beaucoupLa]}
               title="Ça fait beaucoup là, non ?"
+              link="fossileEtFutur"
             />
             <img src={CR44} />
             <img src={CR45} />
@@ -279,6 +291,7 @@ function IndexPage() {
               type="horizontal"
               src={[EmotionLaMaison]}
               title="La maison trop petite à Gentioux"
+              link="tergiversation"
             />
             <img src={CR47} />
             <img src={CR48} />
@@ -290,6 +303,7 @@ function IndexPage() {
               type="vertical"
               src={[lesComissions]}
               title="Les commissions c'est quoi ?"
+              link="apropos"
             />
             <img src={CR413} />
             <img src={CR414} />
@@ -332,6 +346,7 @@ function IndexPage() {
               type="horizontal"
               src={[ancienLocataires]}
               title="Anciens locataires"
+              link="fossileEtFutur"
             />
             <img src={CR64} />
             <img src={CR65} />

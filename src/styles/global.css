@@ -6,6 +6,7 @@
   .dotted {
     background-image: url("../images/fond.png");
     background-attachment: fixed;
+    background-size: 1500px;
   }
 }
 
@@ -56,8 +57,8 @@ body {
 
 .fenetre {
   color: white;
-  padding: 1.5rem 0;
-  background-size: 932px 83px;
+  padding: 0.8rem 0;
+  background-size: 932px 85px;
   background-position-x: -10px;
   cursor: pointer;
   background-position-y: -5px;
@@ -65,7 +66,39 @@ body {
 }
 
 .wrapper {
-  margin-top: -7px;
+  margin-top: -8px;
   width: calc(100% - 4px);
   margin-left: 2px;
+}
+
+.link {
+  width: 200px;
+  height: 3.1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fossileEtFutur {
+  background-image: url("../images/Fenetres/fossileetfutur.png");
+}
+.fossileEtFutur:hover {
+  background-image: url("../images/Fenetres/fossileetfutur_hover.png");
+}
+.tergiversation {
+  background-image: url("../images/Fenetres/tergiversations.png");
+}
+.tergiversation:hover {
+  background-image: url("../images/Fenetres/tergiversations_hover.png");
+}
+.futurFutur {
+  background-image: url("../images/Fenetres/futurfutur.png");
+}
+.futurFutur:hover {
+  background-image: url("../images/Fenetres/futurfutur_hover.png");
+}
+.apropos {
+  background-image: url("../images/Fenetres/apropos.png");
+}
+.apropos:hover {
+  background-image: url("../images/Fenetres/apropos_hover.png");
 }

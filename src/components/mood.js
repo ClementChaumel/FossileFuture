@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import fenetreDefault from "../images/Fenetres/fenetre_vide.png";
 
-const Mood = ({ title, type = "horizontal", src }) => {
+const Mood = ({ title, type = "horizontal", src, link }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const typeClassMap = {
@@ -27,7 +27,8 @@ const Mood = ({ title, type = "horizontal", src }) => {
         }}
       >
         <button className={`button ${isOpen ? "button--open" : ""}`} />
-        <h3 className="text-lg">{title}</h3>
+        <h3 className="text-lg flex-grow">{title}</h3>
+        {link && <a href={`/${link}`} className={`${link} link mr-3`}></a>}
       </div>
       <Wrapper isOpen={isOpen} src={src} numberOfPanel />
     </div>
@@ -133,6 +134,7 @@ Mood.propTypes = {
   src: PropTypes.array.isRequired,
   type: PropTypes.oneOf(["horizontal", "comic", "carousel", "vertical"]),
   numberOfPanel: PropTypes.number,
+  link: PropTypes.string,
 };
 Horizontal.propTypes = {
   src: PropTypes.array.isRequired,
