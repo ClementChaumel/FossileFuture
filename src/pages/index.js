@@ -163,7 +163,7 @@ function IndexPage() {
             C&apos;est le toit !
           </p>
         </div>
-        <div className="flex flex-col p-6 border-4 border-black border-t-0 dotted">
+        <div className="flex flex-col-reverse p-6 border-4 border-black border-t-0 dotted ">
           {/* CR1 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
             <img src={CR11} />
