@@ -68,12 +68,12 @@ const Comic = ({ isOpen, src }) => {
         border-2
         ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
-      style={{ height: isOpen ? "305px" : "0px" }}
+      style={{ height: isOpen ? "306px" : "0px" }}
     >
       <img
         className="max-w-none pb-3.5"
         src={src[0]}
-        style={{ height: "311px" }}
+        style={{ height: "316px" }}
       />
     </div>
   );

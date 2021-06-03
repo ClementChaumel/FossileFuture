@@ -165,7 +165,7 @@ function IndexPage() {
             <img className="max-w-md" src={LogoToit} />
           </div>
         </div>
-        <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 dotted ">
+        <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR1 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR11} />
@@ -345,7 +345,7 @@ function IndexPage() {
             <img src={CR62} />
             <img src={CR63} />
             <Mood
-              type="horizontal"
+              type="comic"
               src={[ancienLocataires]}
               title="Anciens locataires"
               link="fossileEtFutur"
@@ -387,7 +387,7 @@ function IndexPage() {
           </div>
         </div>
       </div>
-      <div className="bg-green-500 p-20">
+      <div className="bg-white border-black border-t-2 p-20">
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
       </div>
     </div>
