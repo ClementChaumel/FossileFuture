@@ -47,8 +47,8 @@ const Horizontal = ({ isOpen, src }) => {
         duration-1000
         wrapper
         border-black
-        border-4
-        ${isOpen ? "border-t-4 border-b-4" : "border-t-0 border-b-0"}
+        border-2
+        ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
     >
       <img className="max-w-none h-96 pb-3.5" src={src[0]} />
@@ -65,8 +65,8 @@ const Comic = ({ isOpen, src }) => {
         duration-1000
         wrapper
         border-black
-        border-4
-        ${isOpen ? "border-t-4 border-b-4" : "border-t-0 border-b-0"}
+        border-2
+        ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
       style={{ height: isOpen ? "305px" : "0px" }}
     >
@@ -89,8 +89,8 @@ const Carousel = ({ isOpen, src }) => {
         duration-1000
         wrapper
         border-black
-        border-4
-        ${isOpen ? "border-t-4 border-b-4" : "border-t-0 border-b-0"}
+        border-2
+        ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
     >
       <ReactCarousel
@@ -116,8 +116,8 @@ const Vertical = ({ isOpen, src }) => {
         transition-max-height
         wrapper
         border-black
-        border-4
-        ${isOpen ? "border-t-4 border-b-4" : "border-t-0 border-b-0"}
+        border-2
+        ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in`}
       style={{
         maxHeight: isOpen ? "80vh" : "0px",

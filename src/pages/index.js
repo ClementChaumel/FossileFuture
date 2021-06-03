@@ -3,6 +3,8 @@ import Mood from "../components/mood";
 
 import SEO from "../components/seo";
 
+import LogoToit from "../images/logotoit.png";
+
 import CR11 from "../images/CR1/cr1_1.jpg";
 import CR12 from "../images/CR1/cr1_2.jpg";
 import CR13 from "../images/CR1/cr1_3.jpg";
@@ -158,14 +160,14 @@ function IndexPage() {
         title="Home"
       />
       <div className="max-w-screen-lg mx-auto ">
-        <div className=" bg-yellow-900 p-20">
-          <p className="text-white text-5xl text-center">
-            C&apos;est le toit !
-          </p>
+        <div className="stroke">
+          <div className="toit flex justify-center items-end">
+            <img className="max-w-md" src={LogoToit} />
+          </div>
         </div>
-        <div className="flex flex-col-reverse p-6 border-4 border-black border-t-0 dotted ">
+        <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 dotted ">
           {/* CR1 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR11} />
             <img src={CR12} />
             <img src={CR13} />
@@ -210,7 +212,7 @@ function IndexPage() {
           </div>
 
           {/* CR2 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR21} />
             <img src={CR22} />
             <img src={CR23} />
@@ -246,7 +248,7 @@ function IndexPage() {
           </div>
 
           {/* CR3 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR31} />
             <img src={CR32} />
             <img src={CR33} />
@@ -274,7 +276,7 @@ function IndexPage() {
           </div>
 
           {/* CR4 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR41} />
             <img src={CR42} />
             <img src={CR43} />
@@ -310,7 +312,7 @@ function IndexPage() {
           </div>
 
           {/* CR5 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR51} />
             <img src={CR52} />
             <img src={CR53} />
@@ -338,7 +340,7 @@ function IndexPage() {
           </div>
 
           {/* CR6 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR61} />
             <img src={CR62} />
             <img src={CR63} />
@@ -368,7 +370,7 @@ function IndexPage() {
           </div>
 
           {/* CR7 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-4 border-black mb-16">
+          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <img src={CR71} />
             <img src={CR72} />
             <img src={CR73} />
