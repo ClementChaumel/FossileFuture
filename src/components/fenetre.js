@@ -154,6 +154,7 @@ const Vertical = ({ isOpen, src }) => {
       style={{
         maxHeight: isOpen ? "80vh" : "0px",
         transitionDuration: "850ms",
+        paddingTop: isOpen ? "56px" : "0px",
       }}
     >
       <img src={src[0]} />
