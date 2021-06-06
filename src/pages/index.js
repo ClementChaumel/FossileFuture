@@ -34,9 +34,7 @@ function IndexPage() {
   const [cr6, isCr6Visible] = useInView();
   const [cr7, isCr7Visible] = useInView();
 
-  const [currentCR, setCurrentCR] = useState(
-    parseInt(window?.location?.hash?.split("-")?.[1])
-  );
+  const [currentCR, setCurrentCR] = useState(1);
 
   useEffect(() => {
     if (isCr1Visible) {
