@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
-import fenetreDefault from "../images/Fenetres/fenetre_vide.png";
 
-const Mood = ({ title, type = "horizontal", src, link }) => {
+const Fenetre = ({ title, type = "horizontal", src, link }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const typeClassMap = {
@@ -20,22 +19,19 @@ const Mood = ({ title, type = "horizontal", src, link }) => {
   return (
     <div className="bg-white col-span-3">
       <div
-        className="flex items-center fenetre"
-        style={{ backgroundImage: `url(${fenetreDefault})` }}
+        className={`flex fenetre items-center ${link}`}
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       >
-        <button className={`button ${isOpen ? "button--open" : ""}`} />
-        <h3 className="text-lg flex-grow">{title}</h3>
-        {link && <a href={`/${link}`} className={`${link} link mr-3`}></a>}
+        <h3 className="text-lg ml-auto mr-12">{title}</h3>
       </div>
       <Wrapper isOpen={isOpen} src={src} numberOfPanel />
     </div>
   );
 };
 
-export default Mood;
+export default Fenetre;
 
 const Horizontal = ({ isOpen, src }) => {
   return (
@@ -50,8 +46,15 @@ const Horizontal = ({ isOpen, src }) => {
         border-2
         ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
+      style={{
+        paddingTop: isOpen ? "56px" : "0px",
+      }}
     >
-      <img className="max-w-none h-96 pb-3.5" src={src[0]} />
+      <img
+        className="max-w-none pb-3.5"
+        src={src[0]}
+        style={{ height: "316px" }}
+      />
     </div>
   );
 };
@@ -68,7 +71,10 @@ const Comic = ({ isOpen, src }) => {
         border-2
         ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
-      style={{ height: isOpen ? "306px" : "0px" }}
+      style={{
+        height: isOpen ? "362px" : "0px",
+        paddingTop: isOpen ? "56px" : "0px",
+      }}
     >
       <img
         className="max-w-none pb-3.5"
@@ -92,6 +98,9 @@ const Carousel = ({ isOpen, src }) => {
         border-2
         ${isOpen ? "border-t-2 border-b-2" : "border-t-0 border-b-0"}
         ease-in-out`}
+      style={{
+        paddingTop: isOpen ? "56px" : "0px",
+      }}
     >
       <ReactCarousel
         emulateTouch={true}
@@ -129,7 +138,7 @@ const Vertical = ({ isOpen, src }) => {
   );
 };
 
-Mood.propTypes = {
+Fenetre.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   src: PropTypes.array.isRequired,
   type: PropTypes.oneOf(["horizontal", "comic", "carousel", "vertical"]),

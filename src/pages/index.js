@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import Mood from "../components/mood";
+import Fenetre from "../components/fenetre";
 
 import SEO from "../components/seo";
 
@@ -44,10 +44,10 @@ function IndexPage() {
             <StaticImage src="../images/CR1/cr1_1.jpg" />
             <StaticImage src="../images/CR1/cr1_2.jpg" />
             <StaticImage src="../images/CR1/cr1_3.jpg" />
-            <Mood
+            <Fenetre
               type="horizontal"
               src={[tergiBleu]}
-              title="Tergiversations de Bleu : Supprimer le groupe Facebook"
+              title="Supprimer le groupe Facebook"
               link="tergiversation"
             />
             <StaticImage src="../images/CR1/cr1_4.jpg" />
@@ -57,29 +57,25 @@ function IndexPage() {
             <StaticImage src="../images/CR1/cr1_7.jpg" />
             <StaticImage src="../images/CR1/cr1_8.jpg" />
             <StaticImage src="../images/CR1/cr1_9.jpg" />
-            <Mood
+            <Fenetre
               type="comic"
               src={[FossileEtFuturTravaillent]}
-              title="Fossile&Futur travaillent dur"
+              title="Ça travaille dur"
               link="fossileEtFutur"
             />
-            <Mood
+            <Fenetre
               type="comic"
               src={["https://placekitten.com/3000/1000"]}
-              title="Fossile&Futur, qui a pensé à tout ça ?"
+              title="Qui a pensé à tout ça ?"
               link="fossileEtFutur"
             />
             <StaticImage src="../images/CR1/cr1_10.jpg" />
             <StaticImage src="../images/CR1/cr1_11.jpg" />
             <StaticImage src="../images/CR1/cr1_12.jpg" />
-            <Mood
+            <Fenetre
               type="carousel"
               src={[narration11, narration12, narration13, narration14]}
-              title={
-                <>
-                  Futur<em>Futur</em> Et si l&apos;asso avait un autre nom
-                </>
-              }
+              title="Et si l'asso avait un autre nom"
               link="futurFutur"
             />
           </div>
@@ -101,7 +97,7 @@ function IndexPage() {
             <StaticImage src="../images/CR2/cr2_13.jpg" />
             <StaticImage src="../images/CR2/cr2_14.jpg" />
             <StaticImage src="../images/CR2/cr2_15.jpg" />
-            <Mood
+            <Fenetre
               type="comic"
               src={[chacunSonTruc]}
               title="Chacun.e son truc"
@@ -112,7 +108,7 @@ function IndexPage() {
             <StaticImage src="../images/CR2/cr2_18.jpg" />
             <StaticImage src="../images/CR2/cr2_19.jpg" />
             <StaticImage src="../images/CR2/cr2_20.jpg" />
-            <Mood
+            <Fenetre
               type="horizontal"
               src={[emotionBiere]}
               title="Bière, quel plaisir"
@@ -125,7 +121,7 @@ function IndexPage() {
             <StaticImage src="../images/CR3/cr3_1.jpg" />
             <StaticImage src="../images/CR3/cr3_2.jpg" />
             <StaticImage src="../images/CR3/cr3_3.jpg" />
-            <Mood
+            <Fenetre
               type="comic"
               src={[caChipote]}
               title="Ça chipote"
@@ -153,7 +149,7 @@ function IndexPage() {
             <StaticImage src="../images/CR4/cr4_1.jpg" />
             <StaticImage src="../images/CR4/cr4_2.jpg" />
             <StaticImage src="../images/CR4/cr4_3.jpg" />
-            <Mood
+            <Fenetre
               type="comic"
               src={[beaucoupLa]}
               title="Ça fait beaucoup là, non ?"
@@ -162,7 +158,7 @@ function IndexPage() {
             <StaticImage src="../images/CR4/cr4_4.jpg" />
             <StaticImage src="../images/CR4/cr4_5.jpg" />
             <StaticImage src="../images/CR4/cr4_6.jpg" />
-            <Mood
+            <Fenetre
               type="horizontal"
               src={[EmotionLaMaison]}
               title="La maison trop petite à Gentioux"
@@ -174,7 +170,7 @@ function IndexPage() {
             <StaticImage src="../images/CR4/cr4_10.jpg" />
             <StaticImage src="../images/CR4/cr4_11.jpg" />
             <StaticImage src="../images/CR4/cr4_12.jpg" />
-            <Mood
+            <Fenetre
               type="vertical"
               src={[lesComissions]}
               title="Les commissions c'est quoi ?"
@@ -217,7 +213,7 @@ function IndexPage() {
             <StaticImage src="../images/CR6/cr6_1.jpg" />
             <StaticImage src="../images/CR6/cr6_2.jpg" />
             <StaticImage src="../images/CR6/cr6_3.jpg" />
-            <Mood
+            <Fenetre
               type="comic"
               src={[ancienLocataires]}
               title="Anciens locataires"

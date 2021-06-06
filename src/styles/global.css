@@ -75,19 +75,22 @@ body {
 }
 
 .fenetre {
-  color: white;
-  padding: 0.8rem 0;
-  background-size: 941px 85px;
-  background-position-x: -10px;
+  color: black;
+  height: 105px;
+  background-size: cover;
   cursor: pointer;
-  background-position-y: -5px;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+}
+.fenetre:hover {
+  color: white;
 }
 
 .wrapper {
-  margin-top: -8px;
   width: calc(100% - 4px);
-  margin-left: 2px;
+  position: relative;
+  top: -56px;
 }
 
 .link {
