@@ -38,6 +38,35 @@ body {
   background-size: 1500px;
 }
 
+.cloud {
+  position: fixed;
+  right: 50px;
+  display: grid;
+  cursor: pointer;
+}
+
+.cloud.next {
+  top: 40%;
+}
+
+.cloud.previous {
+  top: 60%;
+}
+
+.cloud > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.cloud:hover > *:last-child {
+  display: none;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .carousel.carousel-slider .control-arrow {
   top: calc(50% - 1.5rem) !important;
   background: black !important;

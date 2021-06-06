@@ -39,6 +39,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-image`,
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -50,
+      },
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {

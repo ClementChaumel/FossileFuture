@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { useInView } from "react-hook-inview";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Fenetre from "../components/fenetre";
 
 import SEO from "../components/seo";
@@ -24,6 +26,50 @@ import EmotionLaMaison from "../images/CR4/emotion___La_Maison_Trop_Petite_A_Gen
 import ancienLocataires from "../images/CR6/comic_Ancien_locataires.jpg";
 
 function IndexPage() {
+  const [cr1, isCr1Visible] = useInView();
+  const [cr2, isCr2Visible] = useInView();
+  const [cr3, isCr3Visible] = useInView();
+  const [cr4, isCr4Visible] = useInView();
+  const [cr5, isCr5Visible] = useInView();
+  const [cr6, isCr6Visible] = useInView();
+  const [cr7, isCr7Visible] = useInView();
+
+  const [currentCR, setCurrentCR] = useState(
+    parseInt(window?.location?.hash?.split("-")?.[1])
+  );
+
+  useEffect(() => {
+    if (isCr1Visible) {
+      setCurrentCR(1);
+    }
+    if (isCr2Visible) {
+      setCurrentCR(2);
+    }
+    if (isCr3Visible) {
+      setCurrentCR(3);
+    }
+    if (isCr4Visible) {
+      setCurrentCR(4);
+    }
+    if (isCr5Visible) {
+      setCurrentCR(5);
+    }
+    if (isCr6Visible) {
+      setCurrentCR(6);
+    }
+    if (isCr7Visible) {
+      setCurrentCR(7);
+    }
+  }, [
+    isCr1Visible,
+    isCr2Visible,
+    isCr3Visible,
+    isCr4Visible,
+    isCr5Visible,
+    isCr6Visible,
+    isCr7Visible,
+  ]);
+
   return (
     <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
       <SEO
@@ -38,9 +84,40 @@ function IndexPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
+        <AnchorLink
+          to={`/#cr-${currentCR + 1}`}
+          onAnchorLinkClick={() => {
+            setCurrentCR(currentCR + 1);
+          }}
+          className={`cloud next ${currentCR === 7 ? "disabled" : ""}`}
+        >
+          <div className="w-36">
+            <StaticImage src="../images/clouds/suivant_hover.png" />
+          </div>
+          <div className="w-36">
+            <StaticImage src="../images/clouds/suivant.png" />
+          </div>
+        </AnchorLink>
+        <AnchorLink
+          to={`/#cr-${currentCR - 1}`}
+          onAnchorLinkClick={() => {
+            setCurrentCR(currentCR - 1);
+          }}
+          className={`cloud previous ${currentCR === 1 ? "disabled" : ""}`}
+        >
+          <div className="w-36">
+            <StaticImage src="../images/clouds/pecedent_hover.png" />
+          </div>
+          <div className="w-36">
+            <StaticImage src="../images/clouds/pecedent.png" />
+          </div>
+        </AnchorLink>
+        <a className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR1 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr1} id="cr-1" className="col-span-3">
+              CR1
+            </h1>
             <StaticImage src="../images/CR1/cr1_1.jpg" />
             <StaticImage src="../images/CR1/cr1_2.jpg" />
             <StaticImage src="../images/CR1/cr1_3.jpg" />
@@ -82,6 +159,9 @@ function IndexPage() {
 
           {/* CR2 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr2} id="cr-2" className="col-span-3">
+              CR2
+            </h1>
             <StaticImage src="../images/CR2/cr2_1.jpg" />
             <StaticImage src="../images/CR2/cr2_2.jpg" />
             <StaticImage src="../images/CR2/cr2_3.jpg" />
@@ -118,6 +198,9 @@ function IndexPage() {
 
           {/* CR3 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr3} id="cr-3" className="col-span-3">
+              CR3
+            </h1>
             <StaticImage src="../images/CR3/cr3_1.jpg" />
             <StaticImage src="../images/CR3/cr3_2.jpg" />
             <StaticImage src="../images/CR3/cr3_3.jpg" />
@@ -146,6 +229,9 @@ function IndexPage() {
 
           {/* CR4 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr4} id="cr-4" className="col-span-3">
+              CR4
+            </h1>
             <StaticImage src="../images/CR4/cr4_1.jpg" />
             <StaticImage src="../images/CR4/cr4_2.jpg" />
             <StaticImage src="../images/CR4/cr4_3.jpg" />
@@ -182,6 +268,9 @@ function IndexPage() {
 
           {/* CR5 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr5} id="cr-5" className="col-span-3">
+              CR5
+            </h1>
             <StaticImage src="../images/CR5/cr5_1.jpg" />
             <StaticImage src="../images/CR5/cr5_2.jpg" />
             <StaticImage src="../images/CR5/cr5_3.jpg" />
@@ -210,6 +299,9 @@ function IndexPage() {
 
           {/* CR6 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr6} id="cr-6" className="col-span-3">
+              CR6
+            </h1>
             <StaticImage src="../images/CR6/cr6_1.jpg" />
             <StaticImage src="../images/CR6/cr6_2.jpg" />
             <StaticImage src="../images/CR6/cr6_3.jpg" />
@@ -240,6 +332,9 @@ function IndexPage() {
 
           {/* CR7 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
+            <h1 ref={cr7} id="cr-7" className="col-span-3">
+              CR7
+            </h1>
             <StaticImage src="../images/CR7/cr7_1.jpg" />
             <StaticImage src="../images/CR7/cr7_2.jpg" />
             <StaticImage src="../images/CR7/cr7_3.jpg" />
@@ -254,7 +349,7 @@ function IndexPage() {
             <StaticImage src="../images/CR7/cr7_12.jpg" />
             <StaticImage src="../images/CR7/cr7_13.jpg" />
           </div>
-        </div>
+        </a>
       </div>
       <div className="bg-white border-black border-t-2 p-20">
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
