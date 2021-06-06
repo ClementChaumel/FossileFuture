@@ -11,12 +11,12 @@
 }
 
 @font-face {
-  font-family: "Redaction Regular";
-  src: url("../fonts/Redaction-Regular.woff2");
+  font-family: "Belgika";
+  src: url("../fonts/belgika-5th-webfont.ttf");
 }
 
 body {
-  font-family: "Redaction Regular";
+  font-family: "Belgika";
 }
 
 .stroke {
