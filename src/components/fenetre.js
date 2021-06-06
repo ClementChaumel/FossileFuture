@@ -4,8 +4,14 @@ import PropTypes from "prop-types";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 
-const Fenetre = ({ title, type = "horizontal", src, link }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Fenetre = ({
+  title,
+  type = "horizontal",
+  src,
+  link,
+  alwaysOpen = false,
+}) => {
+  const [isOpen, setIsOpen] = useState(alwaysOpen);
 
   const typeClassMap = {
     horizontal: Horizontal,
@@ -21,12 +27,29 @@ const Fenetre = ({ title, type = "horizontal", src, link }) => {
       <div
         className={`flex fenetre items-center ${link}`}
         onClick={() => {
-          setIsOpen(!isOpen);
+          setIsOpen(!isOpen || alwaysOpen);
         }}
       >
         <h3 className="text-lg ml-auto mr-12">{title}</h3>
       </div>
       <Wrapper isOpen={isOpen} src={src} numberOfPanel />
+      {!alwaysOpen && (
+        <div
+          className="relative flex border-2 border-black p-4 transition-max-height duration-500 ease-in-out"
+          style={{
+            width: "calc(100% - 4px)",
+            top: "-57px",
+            maxHeight: isOpen ? 50 : 0,
+            paddingTop: isOpen ? "1rem" : 0,
+            paddingBottom: isOpen ? "1rem" : 0,
+            opacity: isOpen ? "1" : 0,
+          }}
+        >
+          <a href={`/category/${link}`} className="ml-auto">
+            + de {link}
+          </a>
+        </div>
+      )}
     </div>
   );
 };
@@ -144,6 +167,7 @@ Fenetre.propTypes = {
   type: PropTypes.oneOf(["horizontal", "comic", "carousel", "vertical"]),
   numberOfPanel: PropTypes.number,
   link: PropTypes.string,
+  alwaysOpen: PropTypes.bool,
 };
 Horizontal.propTypes = {
   src: PropTypes.array.isRequired,

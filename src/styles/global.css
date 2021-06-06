@@ -106,10 +106,10 @@ body {
 .fossileEtFutur:hover {
   background-image: url("../images/Fenetres/fossileetfutur_hover.png");
 }
-.tergiversation {
+.tergiversations {
   background-image: url("../images/Fenetres/tergiversations.png");
 }
-.tergiversation:hover {
+.tergiversations:hover {
   background-image: url("../images/Fenetres/tergiversations_hover.png");
 }
 .futurFutur {
@@ -118,9 +118,9 @@ body {
 .futurFutur:hover {
   background-image: url("../images/Fenetres/futurfutur_hover.png");
 }
-.apropos {
+.tutos {
   background-image: url("../images/Fenetres/apropos.png");
 }
-.apropos:hover {
+.tutos:hover {
   background-image: url("../images/Fenetres/apropos_hover.png");
 }

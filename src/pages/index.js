@@ -48,7 +48,7 @@ function IndexPage() {
               type="horizontal"
               src={[tergiBleu]}
               title="Supprimer le groupe Facebook"
-              link="tergiversation"
+              link="tergiversations"
             />
             <StaticImage src="../images/CR1/cr1_4.jpg" />
             <StaticImage src="../images/CR1/cr1_5.jpg" />
@@ -112,7 +112,7 @@ function IndexPage() {
               type="horizontal"
               src={[emotionBiere]}
               title="Bière, quel plaisir"
-              link="tergiversation"
+              link="tergiversations"
             />
           </div>
 
@@ -162,7 +162,7 @@ function IndexPage() {
               type="horizontal"
               src={[EmotionLaMaison]}
               title="La maison trop petite à Gentioux"
-              link="tergiversation"
+              link="tergiversations"
             />
             <StaticImage src="../images/CR4/cr4_7.jpg" />
             <StaticImage src="../images/CR4/cr4_8.jpg" />
@@ -174,7 +174,7 @@ function IndexPage() {
               type="vertical"
               src={[lesComissions]}
               title="Les commissions c'est quoi ?"
-              link="apropos"
+              link="tutos"
             />
             <StaticImage src="../images/CR4/cr4_13.jpg" />
             <StaticImage src="../images/CR4/cr4_14.jpg" />
