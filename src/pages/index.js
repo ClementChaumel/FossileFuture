@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Fenetre from "../components/fenetre";
+import CompteRendu from "../components/CompteRendu";
 
 import SEO from "../components/seo";
 
@@ -23,7 +24,10 @@ import lesComissions from "../images/CR4/Didac_les_commissions_c_est_quoi_.jpg";
 import EmotionLaMaison from "../images/CR4/emotion___La_Maison_Trop_Petite_A_Gentioux.jpg";
 
 import ancienLocataires from "../images/CR6/comic_Ancien_locataires.jpg";
-import CompteRendu from "../components/CompteRendu";
+import bcpDeTravail from "../images/CR6/emotion___bop_de_travaux.jpg";
+import reuEmotion from "../images/CR6/Émotion___Reu_Émotion.jpg";
+import duMalASexp from "../images/CR6/Emotions_du_mal_a_s_exprimer.jpg";
+import pasDeTitre from "../images/CR6/IMG_0768.jpg";
 
 function IndexPage() {
   const [currentCR, setCurrentCR] = useState(1);
@@ -227,6 +231,10 @@ function IndexPage() {
             />
             <StaticImage src="../images/CR4/cr4_13.jpg" />
             <StaticImage src="../images/CR4/cr4_14.jpg" />
+            <StaticImage src="../images/CR4/cr4_15.jpg" />
+            <StaticImage src="../images/CR4/cr4_16.jpg" />
+            <StaticImage src="../images/CR4/cr4_17.jpg" />
+            <StaticImage src="../images/CR4/cr4_18.jpg" />
           </CompteRendu>
 
           {/* CR5 */}
@@ -279,15 +287,39 @@ function IndexPage() {
             <StaticImage src="../images/CR6/cr6_4.jpg" />
             <StaticImage src="../images/CR6/cr6_5.jpg" />
             <StaticImage src="../images/CR6/cr6_6.jpg" />
+            <Fenetre
+              type="horizontal"
+              src={[bcpDeTravail]}
+              title="Beaucoup de travaux"
+              link="tergiversations"
+            />
             <StaticImage src="../images/CR6/cr6_7.jpg" />
             <StaticImage src="../images/CR6/cr6_8.jpg" />
             <StaticImage src="../images/CR6/cr6_9.jpg" />
+            <Fenetre
+              type="horizontal"
+              src={[reuEmotion]}
+              title="Réunion émotions"
+              link="tergiversations"
+            />
             <StaticImage src="../images/CR6/cr6_10.jpg" />
             <StaticImage src="../images/CR6/cr6_11.jpg" />
             <StaticImage src="../images/CR6/cr6_12.jpg" />
+            <Fenetre
+              type="horizontal"
+              src={[duMalASexp]}
+              title="Du mal à s'exprimer"
+              link="tergiversations"
+            />
             <StaticImage src="../images/CR6/cr6_13.jpg" />
             <StaticImage src="../images/CR6/cr6_14.jpg" />
             <StaticImage src="../images/CR6/cr6_15.jpg" />
+            <Fenetre
+              type="horizontal"
+              src={[pasDeTitre]}
+              title="IMG_0768 C'est quoi ce titre de merde je fais quoi avec ça moi hein léa"
+              link="tergiversations"
+            />
             <StaticImage src="../images/CR6/cr6_16.jpg" />
             <StaticImage src="../images/CR6/cr6_17.jpg" />
             <StaticImage src="../images/CR6/cr6_18.jpg" />

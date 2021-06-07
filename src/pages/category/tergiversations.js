@@ -8,6 +8,12 @@ import tergiBleu from "../../images/CR1/tergiversations_bleu_supprimer_groupe_fb
 
 import emotionBiere from "../../images/CR2/emotion___Biere,_quel_plaisir.jpg";
 import EmotionLaMaison from "../../images/CR4/emotion___La_Maison_Trop_Petite_A_Gentioux.jpg";
+
+import bcpDeTravail from "../../images/CR6/emotion___bop_de_travaux.jpg";
+import reuEmotion from "../../images/CR6/Émotion___Reu_Émotion.jpg";
+import duMalASexp from "../../images/CR6/Emotions_du_mal_a_s_exprimer.jpg";
+import pasDeTitre from "../../images/CR6/IMG_0768.jpg";
+
 function Tergiversations() {
   return (
     <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
@@ -45,6 +51,34 @@ function Tergiversations() {
               type="horizontal"
               src={[EmotionLaMaison]}
               title="La maison trop petite à Gentioux"
+              link="tergiversations"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="horizontal"
+              src={[bcpDeTravail]}
+              title="Beaucoup de travaux"
+              link="tergiversations"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="horizontal"
+              src={[reuEmotion]}
+              title="Réunion émotions"
+              link="tergiversations"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="horizontal"
+              src={[duMalASexp]}
+              title="Du mal à s'exprimer"
+              link="tergiversations"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="horizontal"
+              src={[pasDeTitre]}
+              title="IMG_0768 C'est quoi ce titre de merde je fais quoi avec ça moi hein léa"
               link="tergiversations"
               alwaysOpen={true}
             />
