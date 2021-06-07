@@ -41,7 +41,7 @@ function IndexPage() {
       <div className="max-w-screen-lg mx-auto ">
         <div className="stroke">
           <div className="toit flex justify-center items-end">
-            <div className="max-w-sm">
+            <div className="max-w-xs">
               <StaticImage src="../images/logotoit.png" />
             </div>
           </div>
