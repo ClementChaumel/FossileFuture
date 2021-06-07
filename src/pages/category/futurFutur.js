@@ -20,7 +20,7 @@ function FuturFutur() {
         <div className="stroke">
           <div className="toit flex justify-center items-end">
             <div className="max-w-sm">
-              <StaticImage src="../../images/logotoit.png" />
+              <StaticImage src="../../images/titretoit_futurfutur.png" />
             </div>
           </div>
         </div>

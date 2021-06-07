@@ -19,7 +19,7 @@ function Tergiversations() {
         <div className="stroke">
           <div className="toit flex justify-center items-end">
             <div className="max-w-sm">
-              <StaticImage src="../../images/logotoit.png" />
+              <StaticImage src="../../images/titretoit_tergiversations.png" />
             </div>
           </div>
         </div>
