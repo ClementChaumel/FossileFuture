@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { useInView } from "react-hook-inview";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Fenetre from "../components/fenetre";
 
@@ -24,49 +23,10 @@ import lesComissions from "../images/CR4/Didac_les_commissions_c_est_quoi_.jpg";
 import EmotionLaMaison from "../images/CR4/emotion___La_Maison_Trop_Petite_A_Gentioux.jpg";
 
 import ancienLocataires from "../images/CR6/comic_Ancien_locataires.jpg";
+import CompteRendu from "../components/CompteRendu";
 
 function IndexPage() {
-  const [cr1, isCr1Visible] = useInView();
-  const [cr2, isCr2Visible] = useInView();
-  const [cr3, isCr3Visible] = useInView();
-  const [cr4, isCr4Visible] = useInView();
-  const [cr5, isCr5Visible] = useInView();
-  const [cr6, isCr6Visible] = useInView();
-  const [cr7, isCr7Visible] = useInView();
-
   const [currentCR, setCurrentCR] = useState(1);
-
-  useEffect(() => {
-    if (isCr1Visible) {
-      setCurrentCR(1);
-    }
-    if (isCr2Visible) {
-      setCurrentCR(2);
-    }
-    if (isCr3Visible) {
-      setCurrentCR(3);
-    }
-    if (isCr4Visible) {
-      setCurrentCR(4);
-    }
-    if (isCr5Visible) {
-      setCurrentCR(5);
-    }
-    if (isCr6Visible) {
-      setCurrentCR(6);
-    }
-    if (isCr7Visible) {
-      setCurrentCR(7);
-    }
-  }, [
-    isCr1Visible,
-    isCr2Visible,
-    isCr3Visible,
-    isCr4Visible,
-    isCr5Visible,
-    isCr6Visible,
-    isCr7Visible,
-  ]);
 
   return (
     <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
@@ -112,10 +72,12 @@ function IndexPage() {
         </AnchorLink>
         <a className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR1 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr1} id="cr-1" className="col-span-3">
-              CR1
-            </h1>
+
+          <CompteRendu
+            title="CR1: Réunion du 04/07/2019"
+            number={1}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR1/cr1_1.jpg" />
             <StaticImage src="../images/CR1/cr1_2.jpg" />
             <StaticImage src="../images/CR1/cr1_3.jpg" />
@@ -153,13 +115,14 @@ function IndexPage() {
               title="Et si l'asso avait un autre nom"
               link="futurFutur"
             />
-          </div>
+          </CompteRendu>
 
           {/* CR2 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr2} id="cr-2" className="col-span-3">
-              CR2
-            </h1>
+          <CompteRendu
+            title="CR2: Réunion du 08/12/2019"
+            number={2}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR2/cr2_1.jpg" />
             <StaticImage src="../images/CR2/cr2_2.jpg" />
             <StaticImage src="../images/CR2/cr2_3.jpg" />
@@ -192,13 +155,14 @@ function IndexPage() {
               title="Bière, quel plaisir"
               link="tergiversations"
             />
-          </div>
+          </CompteRendu>
 
           {/* CR3 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr3} id="cr-3" className="col-span-3">
-              CR3
-            </h1>
+          <CompteRendu
+            title="CR3: Réunion du 10/03/2020"
+            number={3}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR3/cr3_1.jpg" />
             <StaticImage src="../images/CR3/cr3_2.jpg" />
             <StaticImage src="../images/CR3/cr3_3.jpg" />
@@ -223,13 +187,14 @@ function IndexPage() {
             <StaticImage src="../images/CR3/cr3_16.jpg" />
             <StaticImage src="../images/CR3/cr3_17.jpg" />
             <StaticImage src="../images/CR3/cr3_18.jpg" />
-          </div>
+          </CompteRendu>
 
           {/* CR4 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr4} id="cr-4" className="col-span-3">
-              CR4
-            </h1>
+          <CompteRendu
+            title="CR4: Réunion du 11/12/2020"
+            number={4}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR4/cr4_1.jpg" />
             <StaticImage src="../images/CR4/cr4_2.jpg" />
             <StaticImage src="../images/CR4/cr4_3.jpg" />
@@ -262,13 +227,14 @@ function IndexPage() {
             />
             <StaticImage src="../images/CR4/cr4_13.jpg" />
             <StaticImage src="../images/CR4/cr4_14.jpg" />
-          </div>
+          </CompteRendu>
 
           {/* CR5 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr5} id="cr-5" className="col-span-3">
-              CR5
-            </h1>
+          <CompteRendu
+            title="CR5: Réunion du 09/01/2021"
+            number={5}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR5/cr5_1.jpg" />
             <StaticImage src="../images/CR5/cr5_2.jpg" />
             <StaticImage src="../images/CR5/cr5_3.jpg" />
@@ -293,13 +259,14 @@ function IndexPage() {
             <StaticImage src="../images/CR5/cr5_22.jpg" />
             <StaticImage src="../images/CR5/cr5_23.jpg" />
             <StaticImage src="../images/CR5/cr5_24.jpg" />
-          </div>
+          </CompteRendu>
 
           {/* CR6 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr6} id="cr-6" className="col-span-3">
-              CR6
-            </h1>
+          <CompteRendu
+            title="CR6: Réunion du 05/02/2021"
+            number={6}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR6/cr6_1.jpg" />
             <StaticImage src="../images/CR6/cr6_2.jpg" />
             <StaticImage src="../images/CR6/cr6_3.jpg" />
@@ -326,13 +293,14 @@ function IndexPage() {
             <StaticImage src="../images/CR6/cr6_18.jpg" />
             <StaticImage src="../images/CR6/cr6_19.jpg" />
             <StaticImage src="../images/CR6/cr6_20.jpg" />
-          </div>
+          </CompteRendu>
 
           {/* CR7 */}
-          <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
-            <h1 ref={cr7} id="cr-7" className="col-span-3">
-              CR7
-            </h1>
+          <CompteRendu
+            title="CR7: Réunion du 22/02/2021"
+            number={7}
+            setCurrentCR={setCurrentCR}
+          >
             <StaticImage src="../images/CR7/cr7_1.jpg" />
             <StaticImage src="../images/CR7/cr7_2.jpg" />
             <StaticImage src="../images/CR7/cr7_3.jpg" />
@@ -346,7 +314,7 @@ function IndexPage() {
             <StaticImage src="../images/CR7/cr7_11.jpg" />
             <StaticImage src="../images/CR7/cr7_12.jpg" />
             <StaticImage src="../images/CR7/cr7_13.jpg" />
-          </div>
+          </CompteRendu>
         </a>
       </div>
       <div className="bg-white border-black border-t-2 p-20">
