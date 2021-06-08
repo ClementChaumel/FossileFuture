@@ -4,6 +4,13 @@ import PropTypes from "prop-types";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 
+const titleMap = {
+  fossileEtFutur: "Fossile & futur",
+  tergiversations: "tergiversations",
+  tutos: "tutos",
+  futurFutur: "Futur Futur",
+};
+
 const Fenetre = ({
   title,
   type = "horizontal",
@@ -32,21 +39,22 @@ const Fenetre = ({
       >
         <h3 className="text-lg ml-auto mr-12">{title}</h3>
       </div>
-      <Wrapper isOpen={isOpen} src={src} numberOfPanel />
+      <Wrapper isOpen={isOpen} src={src} />
       {!alwaysOpen && (
         <div
           className="relative flex border-2 border-black p-4 transition-max-height duration-500 ease-in-out"
           style={{
             width: "calc(100% - 4px)",
-            top: "-57px",
+            top: "-56px",
             maxHeight: isOpen ? 50 : 0,
             paddingTop: isOpen ? "1rem" : 0,
             paddingBottom: isOpen ? "1rem" : 0,
             opacity: isOpen ? "1" : 0,
+            marginBottom: isOpen ? "-56px" : "0px",
           }}
         >
-          <a href={`/category/${link}`} className="ml-auto">
-            + de {link}
+          <a href={`/category/${link}`} className="ml-auto leading-4">
+            + de {titleMap[link]}
           </a>
         </div>
       )}
@@ -166,7 +174,6 @@ Fenetre.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   src: PropTypes.array.isRequired,
   type: PropTypes.oneOf(["horizontal", "comic", "carousel", "vertical"]),
-  numberOfPanel: PropTypes.number,
   link: PropTypes.string,
   alwaysOpen: PropTypes.bool,
 };

@@ -43,6 +43,7 @@ body {
   right: 50px;
   display: grid;
   cursor: pointer;
+  transition: opacity 200ms ease-in;
 }
 
 .cloud.next {
@@ -63,7 +64,7 @@ body {
 }
 
 .disabled {
-  opacity: 0.5;
+  opacity: 0;
   pointer-events: none;
 }
 

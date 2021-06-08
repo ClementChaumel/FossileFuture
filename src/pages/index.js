@@ -78,7 +78,7 @@ function IndexPage() {
           {/* CR1 */}
 
           <CompteRendu
-            title="CR1: Réunion du 04/07/2019"
+            title="Réunion du 04/07/2019"
             number={1}
             setCurrentCR={setCurrentCR}
           >
@@ -104,12 +104,6 @@ function IndexPage() {
               title="Ça travaille dur"
               link="fossileEtFutur"
             />
-            <Fenetre
-              type="comic"
-              src={["https://placekitten.com/3000/1000"]}
-              title="Qui a pensé à tout ça ?"
-              link="fossileEtFutur"
-            />
             <StaticImage src="../images/CR1/cr1_10.jpg" />
             <StaticImage src="../images/CR1/cr1_11.jpg" />
             <StaticImage src="../images/CR1/cr1_12.jpg" />
@@ -123,7 +117,7 @@ function IndexPage() {
 
           {/* CR2 */}
           <CompteRendu
-            title="CR2: Réunion du 08/12/2019"
+            title="Réunion du 08/12/2019"
             number={2}
             setCurrentCR={setCurrentCR}
           >
@@ -163,7 +157,7 @@ function IndexPage() {
 
           {/* CR3 */}
           <CompteRendu
-            title="CR3: Réunion du 10/03/2020"
+            title="Réunion du 10/03/2020"
             number={3}
             setCurrentCR={setCurrentCR}
           >
@@ -195,7 +189,7 @@ function IndexPage() {
 
           {/* CR4 */}
           <CompteRendu
-            title="CR4: Réunion du 11/12/2020"
+            title="Réunion du 11/12/2020"
             number={4}
             setCurrentCR={setCurrentCR}
           >
@@ -239,7 +233,7 @@ function IndexPage() {
 
           {/* CR5 */}
           <CompteRendu
-            title="CR5: Réunion du 09/01/2021"
+            title="Réunion du 09/01/2021"
             number={5}
             setCurrentCR={setCurrentCR}
           >
@@ -271,7 +265,7 @@ function IndexPage() {
 
           {/* CR6 */}
           <CompteRendu
-            title="CR6: Réunion du 05/02/2021"
+            title="Réunion du 05/02/2021"
             number={6}
             setCurrentCR={setCurrentCR}
           >
@@ -329,7 +323,7 @@ function IndexPage() {
 
           {/* CR7 */}
           <CompteRendu
-            title="CR7: Réunion du 22/02/2021"
+            title="Réunion du 22/02/2021"
             number={7}
             setCurrentCR={setCurrentCR}
           >
@@ -349,7 +343,7 @@ function IndexPage() {
           </CompteRendu>
         </a>
       </div>
-      <div className="bg-white border-black border-t-2 p-20">
+      <div className="bg-white border-black border-t-2 p-5">
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
       </div>
     </div>

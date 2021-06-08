@@ -39,13 +39,6 @@ function FossileEtFutur() {
               link="fossileEtFutur"
               alwaysOpen={true}
             />
-            <Fenetre
-              type="comic"
-              src={["https://placekitten.com/3000/1000"]}
-              title="Qui a pensé à tout ça ?"
-              link="fossileEtFutur"
-              alwaysOpen={true}
-            />
 
             <Fenetre
               type="comic"
@@ -81,7 +74,7 @@ function FossileEtFutur() {
           </div>
         </div>
       </div>
-      <div className="bg-white border-black border-t-2 p-20">
+      <div className="bg-white border-black border-t-2 p-5">
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
       </div>
     </div>

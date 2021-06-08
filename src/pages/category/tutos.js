@@ -33,7 +33,7 @@ function Tutos() {
           </div>
         </div>
       </div>
-      <div className="bg-white border-black border-t-2 p-20">
+      <div className="bg-white border-black border-t-2 p-5">
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
       </div>
     </div>
