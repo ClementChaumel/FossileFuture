@@ -17,6 +17,7 @@
 
 body {
   font-family: "Belgika";
+  scroll-behavior: smooth;
 }
 
 .stroke {
@@ -60,6 +61,29 @@ body {
 }
 
 .cloud:hover > *:last-child {
+  display: none;
+}
+
+.balloon {
+  position: absolute;
+  top: -350px;
+  left: 50px;
+  display: grid;
+  cursor: pointer;
+}
+
+.balloon > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.balloon > *:first-child {
+  display: none;
+}
+.balloon:hover > *:first-child {
+  display: block;
+}
+.balloon:hover > *:last-child {
   display: none;
 }
 

@@ -38,7 +38,7 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
-      <div className="max-w-screen-lg mx-auto ">
+      <div className="max-w-screen-lg mx-auto">
         <div className="stroke">
           <div className="toit flex justify-center items-end">
             <div className="max-w-xs">
@@ -343,7 +343,24 @@ function IndexPage() {
           </CompteRendu>
         </a>
       </div>
-      <div className="bg-white border-black border-t-2 p-5">
+      <div className="bg-white border-black border-t-2 p-5 relative">
+        <div
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+          className="balloon"
+        >
+          <div className="w-20">
+            <StaticImage src="../images/aller_en_haut_hover.png" />
+          </div>
+          <div className="w-20">
+            <StaticImage src="../images/aller_en_haut.png" />
+          </div>
+        </div>
         <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
       </div>
     </div>
