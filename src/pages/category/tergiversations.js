@@ -13,22 +13,19 @@ import bcpDeTravail from "../../images/CR6/emotion___bop_de_travaux.jpg";
 import reuEmotion from "../../images/CR6/Émotion___Reu_Émotion.jpg";
 import duMalASexp from "../../images/CR6/Emotions_du_mal_a_s_exprimer.jpg";
 import pasDeTitre from "../../images/CR6/IMG_0768.jpg";
+import Roof from "../../components/Roof";
 
 function Tergiversations() {
   return (
-    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
+    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Tergiversations"
       />
       <div className="max-w-screen-lg mx-auto ">
-        <div className="stroke">
-          <div className="toit flex justify-center items-end">
-            <div className="max-w-sm">
-              <StaticImage src="../../images/titretoit_tergiversations.png" />
-            </div>
-          </div>
-        </div>
+        <Roof showBirb={true}>
+          <StaticImage src="../../images/titretoit_tergiversations.png" />
+        </Roof>
         <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR1 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">

@@ -4,22 +4,19 @@ import Fenetre from "../../components/fenetre";
 
 import SEO from "../../components/seo";
 import lesComissions from "../../images/CR4/Didac_les_commissions_c_est_quoi_.jpg";
+import Roof from "../../components/Roof";
 
 function Tutos() {
   return (
-    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
+    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Tutos"
       />
       <div className="max-w-screen-lg mx-auto ">
-        <div className="stroke">
-          <div className="toit flex justify-center items-end">
-            <div className="max-w-sm">
-              <StaticImage src="../../images/titretoit_tutos.png" />
-            </div>
-          </div>
-        </div>
+        <Roof showBirb={true}>
+          <StaticImage src="../../images/titretoit_tutos.png" />
+        </Roof>
         <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR4 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">

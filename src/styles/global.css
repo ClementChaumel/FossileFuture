@@ -87,6 +87,29 @@ body {
   display: none;
 }
 
+.birb {
+  position: absolute;
+  top: 250px;
+  left: 80px;
+  display: grid;
+  cursor: pointer;
+}
+
+.birb > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.birb > *:first-child {
+  display: none;
+}
+.birb:hover > *:first-child {
+  display: block;
+}
+.birb:hover > *:last-child {
+  display: none;
+}
+
 .disabled {
   opacity: 0;
   pointer-events: none;

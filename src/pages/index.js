@@ -28,24 +28,21 @@ import bcpDeTravail from "../images/CR6/emotion___bop_de_travaux.jpg";
 import reuEmotion from "../images/CR6/Émotion___Reu_Émotion.jpg";
 import duMalASexp from "../images/CR6/Emotions_du_mal_a_s_exprimer.jpg";
 import pasDeTitre from "../images/CR6/IMG_0768.jpg";
+import Roof from "../components/Roof";
 
 function IndexPage() {
   const [currentCR, setCurrentCR] = useState(1);
 
   return (
-    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-96">
+    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
       <div className="max-w-screen-lg mx-auto">
-        <div className="stroke">
-          <div className="toit flex justify-center items-end">
-            <div className="max-w-xs">
-              <StaticImage src="../images/logotoit.png" />
-            </div>
-          </div>
-        </div>
+        <Roof>
+          <StaticImage src="../images/logotoit.png" />
+        </Roof>
         <AnchorLink
           to={`/#cr-${currentCR + 1}`}
           onAnchorLinkClick={() => {
