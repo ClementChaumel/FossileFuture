@@ -8,10 +8,10 @@ function Roof({ showBirb = false, children }) {
       {showBirb && (
         <a href="/" className="birb">
           <div className="w-40">
-            <StaticImage src="../../images/retour_page_daccueil_hover.png" />
+            <StaticImage src="../images/retour_page_daccueil.png" />
           </div>
           <div className="w-40">
-            <StaticImage src="../../images/retour_page_daccueil.png" />
+            <StaticImage src="../images/retour_page_daccueil.png" />
           </div>
         </a>
       )}
