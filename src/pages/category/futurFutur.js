@@ -4,10 +4,13 @@ import Fenetre from "../../components/fenetre";
 
 import SEO from "../../components/seo";
 
-import narration11 from "../../images/CR1/Narration1/Narration1_1.jpg";
-import narration12 from "../../images/CR1/Narration1/Narration1_2.jpg";
-import narration13 from "../../images/CR1/Narration1/Narration1_3.jpg";
-import narration14 from "../../images/CR1/Narration1/Narration1_4.jpg";
+import autreNom from "../../images/FuturFuturFullHeight/futurfutur_nom.jpg";
+import expoEcole from "../../images/FuturFuturFullHeight/futur_futur_expoalecole.jpg";
+import bonjourVoisins from "../../images/FuturFuturFullHeight/futurfutur_boujourlesvoisin.e.s.jpg";
+import venteBiere from "../../images/FuturFuturFullHeight/futurfutur_premiere_vente_de_biere.jpg";
+import separations from "../../images/FuturFuturFullHeight/futurfutur_separation.jpg";
+import veto from "../../images/FuturFuturFullHeight/futurfutur_veto.jpg";
+import voisins from "../../images/FuturFuturFullHeight/futurfutur_voisins.jpg";
 import Roof from "../../components/Roof";
 import Ground from "../../components/Ground";
 
@@ -23,12 +26,53 @@ function FuturFutur() {
           <StaticImage src="../../images/titretoit_futurfutur.png" />
         </Roof>
         <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
-          {/* CR1 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <Fenetre
-              type="carousel"
-              src={[narration11, narration12, narration13, narration14]}
-              title="Et si l'asso avait un autre nom"
+              type="fullHeight"
+              src={autreNom}
+              title="Et si l'asso avait un autre nom ?"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={expoEcole}
+              title="Expo à l'école"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={bonjourVoisins}
+              title="Bonjour les voisin·e·s"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={venteBiere}
+              title="Première vente de bière"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={separations}
+              title="Séparation"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={veto}
+              title="Ah non pas iel !"
+              link="futurFutur"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={voisins}
+              title="On dérange les voisins"
               link="futurFutur"
               alwaysOpen={true}
             />

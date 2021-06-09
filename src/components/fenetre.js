@@ -25,6 +25,7 @@ const Fenetre = ({
     comic: Comic,
     carousel: Carousel,
     vertical: Vertical,
+    fullHeight: FullHeight,
   };
 
   const Wrapper = typeClassMap[type];
@@ -170,6 +171,20 @@ const Vertical = ({ isOpen, src }) => {
   );
 };
 
+const FullHeight = ({ src }) => {
+  return (
+    <div
+      className={`
+        wrapper
+        border-black
+        border-2
+        pt-10`}
+    >
+      <img src={src} />
+    </div>
+  );
+};
+
 Fenetre.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   src: PropTypes.array.isRequired,
@@ -192,4 +207,7 @@ Carousel.propTypes = {
 Vertical.propTypes = {
   src: PropTypes.array.isRequired,
   isOpen: PropTypes.bool.isRequired,
+};
+FullHeight.propTypes = {
+  src: PropTypes.array.isRequired,
 };
