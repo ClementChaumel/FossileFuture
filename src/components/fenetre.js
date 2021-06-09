@@ -33,7 +33,9 @@ const Fenetre = ({
   return (
     <div className="bg-white col-span-3">
       <div
-        className={`flex fenetre items-center ${link}`}
+        className={`flex fenetre items-center ${link} ${
+          alwaysOpen ? "no-hover" : ""
+        }`}
         onClick={() => {
           setIsOpen(!isOpen || alwaysOpen);
         }}

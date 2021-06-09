@@ -85,7 +85,7 @@ function IndexPage() {
   const [currentCR, setCurrentCR] = useState(1);
 
   return (
-    <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
+    <div className="min-h-screen min-w-screen sky pt-48">
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"

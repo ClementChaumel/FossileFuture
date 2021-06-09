@@ -21,6 +21,7 @@ function Ground() {
           <StaticImage src="../images/aller_en_haut.png" />
         </div>
       </div>
+      <div className="grass"></div>
       <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
     </div>
   );

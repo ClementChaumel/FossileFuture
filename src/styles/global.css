@@ -20,6 +20,16 @@ body {
   scroll-behavior: smooth;
 }
 
+.sky {
+  background: rgb(51, 63, 153);
+  background: linear-gradient(
+    0deg,
+    rgba(51, 63, 153, 1) 0%,
+    rgba(160, 169, 251, 1) 50%,
+    rgba(221, 243, 255, 1) 100%
+  );
+}
+
 .stroke {
   position: relative;
   width: 100%;
@@ -137,8 +147,15 @@ body {
   position: relative;
   z-index: 10;
 }
+.fenetre.no-hover {
+  cursor: auto;
+}
+
 .fenetre:hover {
   color: white;
+}
+.fenetre.no-hover:hover {
+  color: black;
 }
 
 .wrapper {
@@ -160,11 +177,17 @@ body {
 .fossileEtFutur:hover {
   background-image: url("../images/Fenetres/fossileetfutur_hover.png");
 }
+.fossileEtFutur.no-hover:hover {
+  background-image: url("../images/Fenetres/fossileetfutur.png");
+}
 .tergiversations {
   background-image: url("../images/Fenetres/tergiversations.png");
 }
 .tergiversations:hover {
   background-image: url("../images/Fenetres/tergiversations_hover.png");
+}
+.tergiversations.no-hover:hover {
+  background-image: url("../images/Fenetres/tergiversations.png");
 }
 .futurFutur {
   background-image: url("../images/Fenetres/futurfutur.png");
@@ -172,9 +195,25 @@ body {
 .futurFutur:hover {
   background-image: url("../images/Fenetres/futurfutur_hover.png");
 }
+.futurFutur.no-hover:hover {
+  background-image: url("../images/Fenetres/futurfutur.png");
+}
 .tutos {
   background-image: url("../images/Fenetres/apropos.png");
 }
 .tutos:hover {
   background-image: url("../images/Fenetres/apropos_hover.png");
+}
+.tutos.no-hover:hover {
+  background-image: url("../images/Fenetres/apropos.png");
+}
+
+.grass {
+  background-image: url("../images/Herbemotif.png");
+  position: absolute;
+  top: -41px;
+  left: 0px;
+  height: 40px;
+  width: 100vw;
+  background-size: contain;
 }
