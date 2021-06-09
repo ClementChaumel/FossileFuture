@@ -14,6 +14,7 @@ import beaucoupLa from "../../images/CR4/Ça_Fait_beaucoup_la_non_Comic.jpg";
 
 import ancienLocataires from "../../images/CR6/comic_Ancien_locataires.jpg";
 import Roof from "../../components/Roof";
+import Ground from "../../components/Ground";
 
 function FossileEtFutur() {
   return (
@@ -71,9 +72,7 @@ function FossileEtFutur() {
           </div>
         </div>
       </div>
-      <div className="bg-white border-black border-t-2 p-5">
-        <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
-      </div>
+      <Ground />
     </div>
   );
 }

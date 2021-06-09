@@ -9,6 +9,7 @@ import narration12 from "../../images/CR1/Narration1/Narration1_2.jpg";
 import narration13 from "../../images/CR1/Narration1/Narration1_3.jpg";
 import narration14 from "../../images/CR1/Narration1/Narration1_4.jpg";
 import Roof from "../../components/Roof";
+import Ground from "../../components/Ground";
 
 function FuturFutur() {
   return (
@@ -34,9 +35,7 @@ function FuturFutur() {
           </div>
         </div>
       </div>
-      <div className="bg-white border-black border-t-2 p-5">
-        <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
-      </div>
+      <Ground />
     </div>
   );
 }

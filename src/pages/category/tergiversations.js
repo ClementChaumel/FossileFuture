@@ -14,6 +14,7 @@ import reuEmotion from "../../images/CR6/Émotion___Reu_Émotion.jpg";
 import duMalASexp from "../../images/CR6/Emotions_du_mal_a_s_exprimer.jpg";
 import pasDeTitre from "../../images/CR6/IMG_0768.jpg";
 import Roof from "../../components/Roof";
+import Ground from "../../components/Ground";
 
 function Tergiversations() {
   return (
@@ -82,9 +83,7 @@ function Tergiversations() {
           </div>
         </div>
       </div>
-      <div className="bg-white border-black border-t-2 p-5">
-        <p className="text-white text-5xl text-center">C&apos;est le sol !</p>
-      </div>
+      <Ground />
     </div>
   );
 }
