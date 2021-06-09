@@ -15,7 +15,7 @@ function OrdresDuJour() {
         <div className="stroke">
           <div className="toit flex justify-center items-end">
             <div className="max-w-sm">
-              <StaticImage src="../../images/titretoit_OrdresDuJour.png" />
+              <StaticImage src="../images/titretoit_ordresdujour.png" />
             </div>
           </div>
         </div>

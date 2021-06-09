@@ -14,10 +14,10 @@ function Ground() {
         }}
         className="balloon"
       >
-        <div className="w-20">
+        <div className="w-32">
           <StaticImage src="../images/aller_en_haut_hover.png" />
         </div>
-        <div className="w-20">
+        <div className="w-32">
           <StaticImage src="../images/aller_en_haut.png" />
         </div>
       </div>
