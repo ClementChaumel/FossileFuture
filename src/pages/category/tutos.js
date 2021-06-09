@@ -3,6 +3,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Fenetre from "../../components/fenetre";
 
 import SEO from "../../components/seo";
+import protocoles from "../../images/CR1/protocolesreunions.png";
+import outils from "../../images/CR1/outilsautiliserpendantlareunion.png";
+import autogestion from "../../images/CR3/Autogestion_C_Quoi.jpg";
 import lesComissions from "../../images/CR4/Didac_les_commissions_c_est_quoi_.jpg";
 import Roof from "../../components/Roof";
 import Ground from "../../components/Ground";
@@ -22,7 +25,28 @@ function Tutos() {
           {/* CR4 */}
           <div className="grid grid-cols-3 p-6 gap-6 bg-white border-2 border-black mb-16">
             <Fenetre
-              type="vertical"
+              type="fullHeight"
+              src={[protocoles]}
+              title="Protocoles de communication en groupe"
+              link="tutos"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={[outils]}
+              title="Outils à utiliser pendant les réunions"
+              link="tutos"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
+              src={[autogestion]}
+              title="L'autogestion"
+              link="tutos"
+              alwaysOpen={true}
+            />
+            <Fenetre
+              type="fullHeight"
               src={[lesComissions]}
               title="Les commissions c'est quoi ?"
               link="tutos"
