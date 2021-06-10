@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
+import { Link } from "gatsby";
 
 const titleMap = {
   fossileEtFutur: "Fossile & futur",
@@ -56,9 +57,9 @@ const Fenetre = ({
             marginBottom: isOpen ? "-56px" : "0px",
           }}
         >
-          <a href={`/category/${link}`} className="ml-auto leading-4">
+          <Link to={`/category/${link}`} className="ml-auto leading-4">
             + de {titleMap[link]}
-          </a>
+          </Link>
         </div>
       )}
     </div>

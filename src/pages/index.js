@@ -120,7 +120,7 @@ function IndexPage() {
             <StaticImage src="../images/clouds/pecedent.png" />
           </div>
         </AnchorLink>
-        <a className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
+        <div className="flex flex-col-reverse p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           {/* CR1 */}
 
           <CompteRendu
@@ -518,7 +518,7 @@ function IndexPage() {
             />
             <StaticImage src="../images/CR7/cr7_13.jpg" />
           </CompteRendu>
-        </a>
+        </div>
       </div>
       <Ground />
     </div>

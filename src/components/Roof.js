@@ -1,19 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 function Roof({ showBirb = false, children }) {
   return (
     <>
       {showBirb && (
-        <a href="/" className="birb">
+        <Link to="/" className="birb">
           <div className="w-64">
             <StaticImage src="../images/retour_page_daccueil_hover.png" />
           </div>
           <div className="w-64">
             <StaticImage src="../images/retour_page_daccueil.png" />
           </div>
-        </a>
+        </Link>
       )}
       <div className="stroke">
         <div className="toit flex justify-center items-end relative">

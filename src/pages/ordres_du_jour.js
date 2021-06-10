@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import SEO from "../components/seo";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 
 function OrdresDuJour() {
   return (
@@ -21,11 +21,11 @@ function OrdresDuJour() {
         </div>
         <div className="flex flex-col p-6 border-2 border-black border-t-0 border-b-0 dotted ">
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <a href="/#cr-1">
+            <Link to="/#cr-1">
               <h1 id="cr-1" className="underline text-center text-3xl pb-6">
                 Réunion du 04/07/2019
               </h1>
-            </a>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">Création de plateformes communes</li>
               <li className="pb-2">
@@ -36,11 +36,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-2">
+            <Link to="/#cr-2">
               <h1 id="cr-2" className="underline text-center text-3xl pb-6">
                 Réunion du 08/12/2019
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">
                 Remise à jour:
@@ -55,11 +55,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-3">
+            <Link to="/#cr-3">
               <h1 id="cr-3" className="underline text-center text-3xl pb-6">
                 Réunion du 10/03/2020
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">
                 Proposition de division des tâches en commissions
@@ -78,11 +78,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-4">
+            <Link to="/#cr-4">
               <h1 id="cr-4" className="underline text-center text-3xl pb-6">
                 Réunion du 11/12/2020
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">Bière</li>
               <li className="pb-2">
@@ -105,11 +105,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-5">
+            <Link to="/#cr-5">
               <h1 id="cr-5" className="underline text-center text-3xl pb-6">
                 Réunion du 09/01/2021
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">
                 Mise à jour commission, nouvelle commissions et changements
@@ -128,11 +128,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-6">
+            <Link to="/#cr-6">
               <h1 id="cr-6" className="underline text-center text-3xl pb-6">
                 Réunion du 05/02/2021
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">
                 Faire un point sur la visite du 30/31 janvier à Meymac
@@ -156,11 +156,11 @@ function OrdresDuJour() {
             </ul>
           </div>
           <div className="p-6 gap-6 bg-white border-2 border-black mb-16">
-            <AnchorLink to="/#cr-7">
+            <Link to="/#cr-7">
               <h1 id="cr-7" className="underline text-center text-3xl pb-6">
                 Réunion du 22/02/2021
               </h1>
-            </AnchorLink>
+            </Link>
             <ul className="list-disc pl-10">
               <li className="pb-2">To do list semaine</li>
               <li className="pb-2">Organisation journée du lendemain</li>
