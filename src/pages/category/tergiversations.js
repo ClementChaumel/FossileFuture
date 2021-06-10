@@ -6,6 +6,7 @@ import SEO from "../../components/seo";
 
 import tergiBleu from "../../images/CR1/tergiversations_bleu_supprimer_groupe_fb.jpg";
 
+import motiveTravaux from "../../images/CR2/Émotion_ _Tres_motive_pour_les_travaux.jpg";
 import emotionBiere from "../../images/CR2/emotion___Biere,_quel_plaisir.jpg";
 import EmotionLaMaison from "../../images/CR4/emotion___La_Maison_Trop_Petite_A_Gentioux.jpg";
 
@@ -37,7 +38,13 @@ function Tergiversations() {
               link="tergiversations"
               alwaysOpen={true}
             />
-
+            <Fenetre
+              type="horizontal"
+              src={[motiveTravaux]}
+              title="trop bien les travaux !"
+              link="tergiversations"
+              alwaysOpen={true}
+            />
             <Fenetre
               type="horizontal"
               src={[emotionBiere]}

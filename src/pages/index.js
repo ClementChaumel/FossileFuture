@@ -19,6 +19,7 @@ import outils from "../images/CR1/outilsautiliserpendantlareunion.png";
 import emotionBiere from "../images/CR2/emotion___Biere,_quel_plaisir.jpg";
 import chacunSonTruc from "../images/CR2/Chacun.e_Son_Truc.jpg";
 import rigolePasBiere from "../images/CR2/Onrigolepasaveclabiere.jpg";
+import motiveTravaux from "../images/CR2/Émotion_ _Tres_motive_pour_les_travaux.jpg";
 import voisins1 from "../images/CR2/futurfutur_voisins_1.jpg";
 import voisins2 from "../images/CR2/futurfutur_voisins_2.jpg";
 import voisins3 from "../images/CR2/futurfutur_voisins_3.jpg";
@@ -202,7 +203,12 @@ function IndexPage() {
             <StaticImage src="../images/CR2/cr2_7.jpg" />
             <StaticImage src="../images/CR2/cr2_8.jpg" />
             <StaticImage src="../images/CR2/cr2_9.jpg" />
-
+            <Fenetre
+              type="horizontal"
+              src={[motiveTravaux]}
+              title="trop bien les travaux !"
+              link="tergiversations"
+            />
             <StaticImage src="../images/CR2/cr2_10.jpg" />
             <StaticImage src="../images/CR2/cr2_11.jpg" />
             <StaticImage src="../images/CR2/cr2_12.jpg" />
