@@ -86,10 +86,7 @@ function IndexPage() {
 
   return (
     <div className="min-h-screen min-w-screen sky pt-48">
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
-      />
+      <SEO keywords={[`Fossile`, `futur`, `bd`, `léa chaumel`]} title="Home" />
       <div className="max-w-screen-lg mx-auto">
         <Roof>
           <StaticImage src="../images/logotoit.png" />

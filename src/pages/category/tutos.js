@@ -13,10 +13,7 @@ import Ground from "../../components/Ground";
 function Tutos() {
   return (
     <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
-      <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Tutos"
-      />
+      <SEO keywords={[`Fossile`, `futur`, `bd`, `léa chaumel`]} title="Tutos" />
       <div className="max-w-screen-lg mx-auto ">
         <Roof showBirb={true}>
           <StaticImage src="../../images/titretoit_tutos.png" />

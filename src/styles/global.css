@@ -21,12 +21,12 @@ body {
 }
 
 .sky {
-  background: rgb(51, 63, 153);
+  background: rgb(212, 240, 255);
   background: linear-gradient(
     0deg,
-    rgba(51, 63, 153, 1) 0%,
-    rgba(160, 169, 251, 1) 50%,
-    rgba(221, 243, 255, 1) 100%
+    rgba(212, 240, 255, 1) 0%,
+    rgba(195, 204, 255, 1) 50%,
+    rgba(64, 167, 255, 1) 100%
   );
 }
 
@@ -211,7 +211,7 @@ body {
 .grass {
   background-image: url("../images/Herbemotif.png");
   position: absolute;
-  top: -41px;
+  top: -40px;
   left: 0px;
   height: 40px;
   width: 100vw;

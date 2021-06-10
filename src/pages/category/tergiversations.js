@@ -20,7 +20,7 @@ function Tergiversations() {
   return (
     <div className="min-h-screen min-w-screen bg-gradient-to-b from-blue-50 to-blue-400 pt-48">
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`Fossile`, `futur`, `bd`, `léa chaumel`]}
         title="Tergiversations"
       />
       <div className="max-w-screen-lg mx-auto ">
@@ -76,7 +76,7 @@ function Tergiversations() {
             <Fenetre
               type="horizontal"
               src={[pasDeTitre]}
-              title="IMG_0768 C'est quoi ce titre de merde je fais quoi avec ça moi hein léa"
+              title="Investissement personnel"
               link="tergiversations"
               alwaysOpen={true}
             />
