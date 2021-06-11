@@ -23,7 +23,7 @@ body {
 .sky {
   background: rgb(212, 240, 255);
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(212, 240, 255, 1) 0%,
     rgba(195, 204, 255, 1) 50%,
     rgba(64, 167, 255, 1) 100%
