@@ -11788,10 +11788,10 @@ react-helmet@6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-hook-inview@^4.3.10:
-  version "4.3.10"
-  resolved "https://registry.yarnpkg.com/react-hook-inview/-/react-hook-inview-4.3.10.tgz#4e3d79ea1aa3974f262ece70f777b61d8e958974"
-  integrity sha512-B6/RzTSqVKAJSe4h/yAv1Eb5OR67xEVFYZgezZ8Yj2/hct7QTTiuqtTkhvvYdL90NQ1fkz4S71cqlWJfj6OlEw==
+react-hook-inview@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-hook-inview/-/react-hook-inview-4.4.0.tgz#6650f117e10925188f28b58a3423aa530935f067"
+  integrity sha512-ldgGb6dP8KbMT+UCr1ooJQMuDDUbtag8IvF+nlO78NUzsdlz047MrMDN7naS6WJ8s29H3e88gKpWMocXlbxNHQ==
 
 react-hot-loader@^4.12.21:
   version "4.13.0"
